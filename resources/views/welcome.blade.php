@@ -74,6 +74,7 @@
                     <a href="/posts/all/1">View posts</a>
                     @auth
                         <a href="/posts/create">Post something!</a>
+                        <a href="/posts/my-posts">My posts</a>
                         <a class="dropdown-item" href="{{ route('logout') }}"
                            onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

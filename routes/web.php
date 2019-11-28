@@ -26,7 +26,10 @@ Route::get("/posts", function () {
 
 
 Route::middleware('auth')->group(function () {
+    Route::get('/posts/{post_id}/edit', 'PostController@edit');
     Route::get('/posts/create', "PostController@create");
+    Route::get("/posts/my-posts", "PostController@myPosts");
+    Route::put('/posts/{post_id}/edit', 'PostController@update');
 });
 
 

@@ -20,13 +20,12 @@
 
             <div>
                 <h6>
-                    {{$post->user->name}}
+                    {{$post->name}}
                     <br>
-                    {{$post->created_at->toRfc850String()}}
+                    {{$post->created_at}} <!-- ->toRfc850String() -->
                 </h6>
             </div>
-            <br>
-            <br>
+            <hr>
         @endforeach
     </body>
 

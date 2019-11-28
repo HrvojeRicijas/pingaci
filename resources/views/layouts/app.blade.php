@@ -1,3 +1,8 @@
+<?php
+use Illuminate\Support\Facades\Auth;
+
+?>
+
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -37,7 +42,9 @@
                     <ul class="navbar-nav mr-auto">
                     </ul>
                     <ul class="navbar-nav mc-auto">
-                        @stack("sorting")
+                        @if(isset($sorting))
+                            @stack("sorting")
+                        @endif
                     </ul>
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">

@@ -17,9 +17,17 @@
             @if($post->filePath)
             <img src="/storage/userUploads/{{$post->filePath}}" alt="image">
             @endif
-            {{$post->user->name}}
+            <div>
+                Author: {{$post->user->name}}
+            </div>
             <br>
             {{$post->created_at}}
+
+            @auth()
+                @if($post->user->name == Auth::user()->name)
+                    <a href="/posts/{{$post->id}}/edit">edit</a>
+                @endif
+            @endauth
 
         </div>
     </body>
