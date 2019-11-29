@@ -1,6 +1,5 @@
 <?php
 use Illuminate\Support\Facades\Auth;
-
 ?>
 
 <!doctype html>
@@ -23,6 +22,9 @@ use Illuminate\Support\Facades\Auth;
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+
+
 </head>
 <body>
     <div id="app">
