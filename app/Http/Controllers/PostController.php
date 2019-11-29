@@ -88,7 +88,8 @@ class PostController extends Controller
         //dd($id);
 
         $post = Post::findOrFail($id);
-        return view("posts.post", ["post"=>$post]);
+        $comments = $post->comments;
+        return view("posts.post", ["post"=>$post, 'comments' => $comments]);
     }
 
     public function edit($id)
@@ -120,6 +121,10 @@ class PostController extends Controller
         return redirect("posts");
     }
 
+
+    public function upvote(Request $request, $id){
+
+    }
 
     public function destroy($id)
     {

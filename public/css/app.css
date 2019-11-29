@@ -52,6 +52,40 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
+.add-comment-box{
+    /*border: #1b4b72;*/
+    border-radius: 10px;
+    background-color: rgba(220, 240, 255, 1);
+    margin-bottom: 0;
+    border-color: rgba(150, 180, 250, 1);
+    flex:1;
+
+}
+.add-comment-button{
+    display: inline;
+    border-radius: 10px;
+    background-color: rgba(210, 230, 255, 1);
+    border-color: rgba(150, 180, 250, 1);
+
+}
+
+
+.comment-divider{
+    text-align: center;
+    background-color: rgba(220, 240, 255, 1);
+    /* border-radius:20%;*/
+    border-radius: 10px;
+    border-color: rgba(150, 180, 250, 1);;
+    border-style: solid;
+    border-width: 1px;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    align-content: center
+}
+
 .post{
     text-align: center;
     background-color: #e9f5fc;
@@ -61,8 +95,27 @@ html {
     margin: auto;
     margin-bottom: 40px;
     margin-top: 10px;
-    align-content: center
+    align-content: center;
+
+    border-color: rgba(180, 210, 250, 1);;
+    border-style: solid;
+    border-width: 1px;
 }
+
+.post-divider{
+    text-align: center;
+    background-color: #e9f5fc;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    align-content: center;
+    border-color: rgba(150, 180, 250, 1);;
+    border-style: solid;
+    border-width: 1px;
+}
+
 .post-image{
     max-width: 90%;
     max-height: 90%;

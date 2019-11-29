@@ -22,6 +22,18 @@ class CreatePostsTable extends Migration
             $table->timestamps();
 
             $table->foreign("user_id")->references("id")->on("users")->onDelete("cascade");
+        });
+        Schema::create('post-user', function (Blueprint $table){
+           $table->bigIncrements('id');
+           $table->bigIncrements('post_id');
+           $table->bigIncrements('user_id');
+           $table->timestamps();
+
+           $table->unique('article_id', 'user_id');
+           $table->foreign('post_id')->references('id')->on('posts')->onDelete('cascade');
+           $table->foreign('post_id')->references('id')->on('posts')->onDelete('cascade');
+
+
 
         });
     }
